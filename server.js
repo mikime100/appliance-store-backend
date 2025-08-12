@@ -45,6 +45,10 @@ app.use("/api/products", productsRouter);
 const adminUploadRouter = require("./routes/adminUpload");
 app.use("/api/admin", adminUploadRouter);
 
+// Admin auth routes (login/verify)
+const adminAuthRouter = require("./routes/adminAuth");
+app.use("/api/admin", adminAuthRouter);
+
 const commentsRouter = require("./routes/comments");
 app.use("/api/comments", commentsRouter);
 
